@@ -1,0 +1,17 @@
+.cart {
+  padding: 20px;
+  background-color: rgba(255, 153, 0, 0.4);
+  border: 2px solid #9A9A9A;
+  height: 35em;
+  /*position: -webkit-sticky;*/
+  position: sticky;
+  top: 0;
+}
+
+.cart p {
+  font-size: 17px;
+}
+
+.cart h5 {
+  font-size: 17px;
+}
