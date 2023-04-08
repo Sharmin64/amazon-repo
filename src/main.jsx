@@ -11,7 +11,7 @@ import Home from './components/Layout/Home';
 import Orders from './components/Orders/Orders';
 import Login from './components/Login/Login';
 import Inventory from './components/Inventory/Inventory';
-import cartProductsLoader from './loaders/cartProductLoaders';
+import cartProductsLoader from './loaders/cartProductsLoader';
 
 
 
