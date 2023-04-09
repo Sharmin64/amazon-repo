@@ -19,7 +19,6 @@ const defaultImage="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_loss
       <button onClick={() => handleAddToCart(props.product)} className='btn-cart'>
         Add to Cart
         <FontAwesomeIcon icon={faShoppingCart} />
-       
       </button>
     </div>
   );

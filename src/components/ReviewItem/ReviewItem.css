@@ -1,7 +1,50 @@
 .review-item {
   border: 2px solid grey;
   width: 571px;
-  border-radius: 20px;
-  margin-top: 5px;
+  height: 107px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  padding: 8px 25px 8px 8px;
+  align-items: center;
+}
 
+.review-item .product-title {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  letter-spacing: 0.0015em;
+}
+
+.review-details {
+  flex-grow: 1;
+}
+
+.review-details p {
+  margin: 0 15px;
+}
+
+.review-item img {
+  width: 91px;
+  height: 91px;
+  border-radius: 8px;
+}
+
+.orange-text {
+  color: #FF9900;
+}
+
+.review-btn {
+  background-color: rgba(235, 87, 87, 0.3);
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-icon {
+  color: #EB5775;
+  font-size: 27px;
 }
