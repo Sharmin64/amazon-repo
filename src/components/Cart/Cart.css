@@ -8,6 +8,20 @@
   top: 0;
 }
 
+.btn-clear-cart {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 50px;
+  font-size: 21px;
+  background-color: #FF3030;
+  color: whitesmoke;
+  border-radius: 8px;
+  margin: 23px auto;
+  /** margin upore(top)  niche(bottom) 10px  and left & right auto */
+  align-items: center;
+}
+
 .cart p {
   font-size: 17px;
 }
