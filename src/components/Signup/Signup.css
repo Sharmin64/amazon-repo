@@ -1,7 +1,7 @@
 .form-container {
   background-color: rgba(211, 208, 208, 0.884);
   width: 50%;
-  /*height: 40em;*/
+  height: 40em;
   margin: 0 auto;
   border-radius: 10px;
   box-shadow: 3px 3px rgba(70, 71, 69, 0.801), -1em 0 .4em;

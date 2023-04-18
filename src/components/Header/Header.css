@@ -21,3 +21,8 @@
 .header div a:hover {
   color: orange;
 }
+
+.text-white {
+  color: gold;
+  padding-left: 8px;
+}

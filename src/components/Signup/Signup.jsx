@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './Signup.css'
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../Providers/AuthProvider';
 
 const Signup = () => {
-  const [error, setError]=useState('')
+  const [error, setError] = useState('')
+    const { createUser}=useContext(AuthContext)
   const handleSignUp = (event) => {
     event.preventDefault()
     const form = event.target
@@ -11,7 +13,7 @@ const Signup = () => {
     const password = form.password.value
     const confirm = form.confirm.value
     console.log(email, password, confirm);
-
+     setError('')
     if (password !== confirm) {
       setError('please confirm password')
       return
@@ -19,6 +21,15 @@ const Signup = () => {
       setError('your password must be 8 charactar or longer.')
       return
     }
+    createUser(email, password)
+      .then(result => {
+        const loggedUser = result.user
+        console.log(loggedUser);
+      })
+      .catch(error => {
+        console.log(error);
+      setError(error.message)
+    })
   }
   return (
     <div className='form-container'>
